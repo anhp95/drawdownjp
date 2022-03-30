@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { GoDash } from "react-icons/go";
+/* eslint import/no-webpack-loader-syntax: off */
 import mapboxgl from "!mapbox-gl";
 import Plot from "react-plotly.js";
-
 import "../css/mapbox.css";
+
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYW5ocCIsImEiOiJja2xpcXZnZ3MycTE5MndxZXgwdHRwM2RpIn0.3Y6CVuK_RTZ1kTMsuF8wvw";
 
