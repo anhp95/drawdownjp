@@ -41,9 +41,9 @@ const Header = () => {
         <h1 className="text-sm float-right font-semibold underline">
           Emission Overview
         </h1>
-        <h1 className="text-sm float-right"> Emission Tracker > {"\u00a0"}</h1>
+        <h1 className="text-sm float-right"> Emission Tracker / {"\u00a0"}</h1>
         <h1 className="text-sm float-right ">
-          {"\u00a0"} Home > {"\u00a0"}
+          {"\u00a0"} Home / {"\u00a0"}
         </h1>
         <AiOutlineHome className="float-right" />
       </div>

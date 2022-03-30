@@ -24,7 +24,7 @@ function App() {
           {/* PageContent */}
           <div className="flex flex-row flex-wrap bg-slate-100">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/emission/overview" element={<EmissionOverview />} />
               <Route path="/drawdown" element={<DrawDown />} />
             </Routes>
@@ -36,21 +36,6 @@ function App() {
         </div>
       </Router>
     </div>
-    // <div className="flex flex-row">
-    //   <Router>
-    //     <SideBar />
-    //     <div className="flex flex-col w-full bg-slate-200">
-    //       <div className="flex">
-    //         <Routes>
-    //           <Route path="/" element={<Home />} />
-    //           <Route path="/emission" element={<Emission />} />
-    //           <Route path="/drawdown" element={<DrawDown />} />
-    //         </Routes>
-    //       </div>
-    //       <Footer />
-    //     </div>
-    //   </Router>
-    // </div>
   );
 }
 

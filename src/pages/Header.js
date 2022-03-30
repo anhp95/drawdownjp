@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const header_item = [
-    { title: "HOME", link: "/", key: "home" },
+    { title: "HOME", link: "/home", key: "home" },
     { title: "SOLUTIONS", link: "/solutions", key: "solutions" },
     {
       title: "PROGRAMS +  PARTNERSHIPS",
