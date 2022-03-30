@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { GoDash } from "react-icons/go";
-import mapboxgl from "mapbox-gl";
+import mapboxgl from "!mapbox-gl";
 import Plot from "react-plotly.js";
 
 import "../css/mapbox.css";
