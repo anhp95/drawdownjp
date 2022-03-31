@@ -170,7 +170,7 @@ const Figure = () => {
         { type: "bar", x: [1, 2, 3], y: [2, 5, 3] },
       ]}
       layout={{
-        width: "auto",
+        width: "800",
         height: "300",
         title: "A Sample Plot",
       }}
@@ -185,16 +185,19 @@ const PageContent = () => {
   return (
     <>
       {/* Chart 1 */}
-      <div className="flex-auto w-1/4 m-2  border-t-2 border-slate-400">
-        <h1 className="text-sm font-semibold float-left bg-teal-100">
-          Sample Figure
-        </h1>
-        <button
-          className="float-right bg-white"
-          onClick={() => setToggle1(!toggle1)}
-        >
-          <GoDash className="text-xl" />
-        </button>
+      <div className="flex-auto w-1/3 m-2  border-t-2 border-slate-400">
+        <div className="flex-auto">
+          <h1 className="text-sm font-semibold float-left bg-teal-100">
+            Sample Figure
+          </h1>
+          <button
+            className="float-right bg-white"
+            onClick={() => setToggle1(!toggle1)}
+          >
+            <GoDash className="text-xl" />
+          </button>
+        </div>
+
         <div
           className={`flex-auto h-70  ${toggle1 ? "hidden bg-slate-100" : ""}`}
         >
@@ -220,15 +223,6 @@ const PageContent = () => {
         </div>
       </div>
       {/* End Chart 2 */}
-      {/* Chart 3 */}
-      {/* <div className="flex-auto w-1/4 gap-1 m-1 bg-white border-t-2 border-slate-400">
-        <h1 className="text-sm font-semibold float-left">Sample Chart 2</h1>
-        <button className="float-right" onClick={() => setToggle2(!toggle2)}>
-          <GoDash className="text-xl" />
-        </button>
-        <div className={`flex-auto h-64 ${toggle2 ? "hidden" : ""}`}></div>
-      </div> */}
-      {/* End Chart 3 */}
       {/* Map */}
       <div className="flex-auto w-full m-2  border-t-2 border-slate-400">
         <h1 className="text-sm font-semibold float-left bg-teal-100">
