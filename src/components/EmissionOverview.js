@@ -170,7 +170,7 @@ const Figure = () => {
         { type: "bar", x: [1, 2, 3], y: [2, 5, 3] },
       ]}
       layout={{
-        width: "auto",
+        width: "500",
         height: "300",
         title: "A Sample Plot",
       }}
@@ -197,7 +197,9 @@ const PageContent = () => {
         </button>
 
         <div
-          className={`flex-auto h-70 ${toggle1 ? "hidden bg-slate-100" : ""}`}
+          className={`flex-auto text-center h-70 ${
+            toggle1 ? "hidden bg-slate-100" : ""
+          }`}
         >
           <Figure />
         </div>
