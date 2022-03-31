@@ -170,7 +170,7 @@ const Figure = () => {
         { type: "bar", x: [1, 2, 3], y: [2, 5, 3] },
       ]}
       layout={{
-        width: "800",
+        width: "auto",
         height: "300",
         title: "A Sample Plot",
       }}
@@ -186,22 +186,20 @@ const PageContent = () => {
     <>
       {/* Chart 1 */}
       <div className="flex-auto w-1/3 m-2  border-t-2 border-slate-400">
-        <div className="flex-auto">
-          <h1 className="text-sm font-semibold float-left bg-teal-100">
-            Sample Figure
-          </h1>
-          <button
-            className="float-right bg-white"
-            onClick={() => setToggle1(!toggle1)}
-          >
-            <GoDash className="text-xl" />
-          </button>
-        </div>
+        <h1 className="text-sm font-semibold float-left bg-teal-100">
+          Sample Figure
+        </h1>
+        <button
+          className="float-right bg-white"
+          onClick={() => setToggle1(!toggle1)}
+        >
+          <GoDash className="text-xl" />
+        </button>
 
         <div
-          className={`flex-auto h-70  ${toggle1 ? "hidden bg-slate-100" : ""}`}
+          className={`flex-auto h-70 ${toggle1 ? "hidden bg-slate-100" : ""}`}
         >
-          <Figure className="w-full h-full" />
+          <Figure />
         </div>
       </div>
       {/* End Chart 1 */}
