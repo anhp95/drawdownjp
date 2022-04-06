@@ -17,14 +17,14 @@ const ION_ASSET_ID = "548989";
 
 function Deck() {
   const INITIAL_VIEW_STATE = {
-    latitude: 40,
-    longitude: -75,
+    latitude: 35.081053,
+    longitude: 136.876717,
     pitch: 45,
     maxPitch: 60,
     bearing: 0,
     minZoom: 2,
     maxZoom: 30,
-    zoom: 17,
+    zoom: 13,
   };
 
   const [initialViewState, setView] = useState({
