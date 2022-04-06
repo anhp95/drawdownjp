@@ -45,7 +45,7 @@ const SideBar = () => {
 
   return (
     <>
-      <div
+      <aside
         className={`bg-sky-900 p-5 pt-2 relative duration-150 ${
           sideBar ? "w-72" : "w-28"
         } `}
@@ -123,7 +123,7 @@ const SideBar = () => {
             </li>
           </Link>
         </ul>
-      </div>
+      </aside>
     </>
   );
 };

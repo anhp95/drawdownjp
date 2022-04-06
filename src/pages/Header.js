@@ -6,20 +6,20 @@ const Header = () => {
     { title: "HOME", link: "/home", key: "home" },
     { title: "SOLUTIONS", link: "/solutions", key: "solutions" },
     {
-      title: "PROGRAMS +  PARTNERSHIPS",
-      link: "/proprams_parnerships",
-      key: "proprams_parnerships",
+      title: "PARTNERSHIPS",
+      link: "/parnerships",
+      key: "parnerships",
     },
     { title: "ABOUT", link: "/about", key: "about" },
   ];
   return (
-    <nav className="relative w-full flex flex-wrap items-center justify-between py-3 shadow-lg">
+    <nav className="relative items-center justify-between py-3">
       <div className="container-fluid w-full flex flex-row items-center justify-between px-6">
         <ul className="flex">
           {header_item.map((item) => (
             <li key={item.key} className="mr-6">
               <Link
-                className="hover:text-blue-800 font-semibold text-sky-700"
+                className="hover:text-blue-800 font-semibold text-sky-700 text-sm"
                 to={item.link}
                 key={item.key}
               >
