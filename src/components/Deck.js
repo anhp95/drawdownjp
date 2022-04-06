@@ -5,7 +5,16 @@ import { Tile3DLayer } from "@deck.gl/geo-layers";
 
 import { CesiumIonLoader } from "@loaders.gl/3d-tiles";
 import { Map } from "react-map-gl";
-// Set your mapbox access token here
+import mapboxgl from "mapbox-gl";
+// The following is required to stop "npm build" from transpiling mapbox code.
+// notice the exclamation point in the import.
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import MapboxWorker from "worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker";
+
+// eslint-disable-next-line import/no-unresolved
+mapboxgl.workerClass = MapboxWorker;
+
 const MAPBOX_ACCESS_TOKEN =
   "pk.eyJ1IjoiYW5ocCIsImEiOiJja2xpcXZnZ3MycTE5MndxZXgwdHRwM2RpIn0.3Y6CVuK_RTZ1kTMsuF8wvw";
 
