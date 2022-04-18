@@ -45,58 +45,6 @@ function App() {
         </div>
       </Router>
     </div>
-
-    // <div className="grid grid-cols-5 min-h-screen">
-    //   <Router>
-    //     {/* SideBar */}
-    //     <aside className="row-span-6 col-start-1 col-end-2 bg-blue-400">
-    //       <SideBar />
-    //     </aside>
-    //     {/* Header */}
-    //     <nav className="col-start-2 col-end-6 bg-slate-400">
-    //       <Header />
-    //     </nav>
-    //     {/* PageContent */}
-    //     <main className="row-span-4 col-start-2 col-end-6">
-    //       <Routes>
-    //         <div className="flex flex-row flex-wrap justify-center">
-    //           <Route path="/home" element={<Home />} />
-    //           <Route path="/emission/overview" element={<EmissionOverview />} />
-    //           <Route path="/drawdown" element={<DrawDown />} />
-    //         </div>
-    //       </Routes>
-    //     </main>
-    //     {/* Footer */}
-    //     <footer className="col-start-2 col-end-6 bg-yellow-400">
-    //       <Footer />
-    //     </footer>
-    //   </Router>
-    // </div>
-
-    // <div className="grid grid-cols-5 min-h-screen">
-    //   <Router>
-    //     <SideBar />
-    //     <Header />
-
-    //     <div className="flex flex-col w-screen">
-    //       {/* Header */}
-
-    //       {/* End Header*/}
-    //       {/* PageContent */}
-    //       <div className="flex flex-row flex-wrap bg-slate-100">
-    //         <Routes>
-    //           <Route path="/home" element={<Home />} />
-    //           <Route path="/emission/overview" element={<EmissionOverview />} />
-    //           <Route path="/drawdown" element={<DrawDown />} />
-    //         </Routes>
-    //       </div>
-    //       {/* End PageContent */}
-    //       {/* Footer */}
-    //       <Footer />
-    //       {/* End Footer */}
-    //     </div>
-    //   </Router>
-    // </div>
   );
 }
 

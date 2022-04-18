@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { RiArrowRightSFill } from "react-icons/ri";
 import { GoDash } from "react-icons/go";
-import Deck from "./Deck";
+import Deck from "./Deck3DTile";
+import DeckGeoJSON, { MapLengend } from "./DeckGeoJSON";
 import Plot, { Plot2 } from "./Plot";
+import PlotGg, { SteppedArea } from "./PlotGg";
 
 const Header = () => {
   return (
@@ -28,10 +30,11 @@ const Header = () => {
 };
 
 const PageContent = () => {
-  const [toggle1, setToggle1] = useState(false);
-  const [toggle2, setToggle2] = useState(false);
-  const [toggle3, setToggle3] = useState(false);
+  const [toggle1, setToggle1] = useState(true);
+  const [toggle2, setToggle2] = useState(true);
+  const [toggle3, setToggle3] = useState(true);
   const [toggle4, setToggle4] = useState(false);
+
   return (
     <>
       <div className="flex flex-col md:flex-row w-full">
@@ -70,7 +73,7 @@ const PageContent = () => {
               toggle2 ? "hidden bg-slate-100" : ""
             }`}
           >
-            <Plot />
+            <SteppedArea />
           </div>
         </div>
         <div className="flex flex-col m-2 md:w-1/3 border-t-2 border-slate-400">
@@ -89,7 +92,7 @@ const PageContent = () => {
               toggle3 ? "hidden bg-slate-100" : ""
             }`}
           >
-            <Plot2 />
+            <PlotGg />
           </div>
         </div>
       </div>
@@ -104,14 +107,14 @@ const PageContent = () => {
               <GoDash className="text-xl" />
             </button>
           </div>
-
           <div
             className={`relative ${
               toggle1 && toggle2 && toggle3 ? "h-[700px]" : "h-[400px]"
             }
           } ${toggle4 ? "hidden bg-slate-100" : ""}`}
           >
-            <Deck />
+            <DeckGeoJSON />
+            <MapLengend />
           </div>
         </div>
       </div>
