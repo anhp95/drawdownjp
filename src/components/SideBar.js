@@ -24,16 +24,16 @@ const SideBar = () => {
       key: 1,
     },
     {
+      title: "Electricity Generation ",
+      src: img_electricity,
+      link: "/emission/electricity",
+      key: 3,
+    },
+    {
       title: "Forestry Sequestration",
       src: img_forestry,
       link: "/emission/forestry_sequestration",
       key: 2,
-    },
-    {
-      title: "Electricity Generation ",
-      src: img_electricity,
-      link: "/emission/electricity_generation",
-      key: 3,
     },
     {
       title: "Direct Emission",

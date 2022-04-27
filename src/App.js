@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import EmissionOverview from "./pages/EmissionOverview";
+import EmissionElectricity from "./pages/EmissionElectricity";
 import DrawDown from "./pages/DrawDown";
 import Home from "./pages/Home";
-import Footer from "./pages/Footer";
-import Header from "./pages/Header";
-import EmissionOverview from "./components/EmissionOverview";
 
 import "./css/index.css";
 
@@ -31,6 +32,10 @@ function App() {
                 <Route
                   path="/emission/overview"
                   element={<EmissionOverview />}
+                />
+                <Route
+                  path="/emission/electricity"
+                  element={<EmissionElectricity />}
                 />
                 <Route path="/drawdown" element={<DrawDown />} />
               </Routes>
