@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import EmissionOverview from "./pages/EmissionOverview";
 import EmissionElectricity from "./pages/EmissionElectricity";
+import EmissionCompany from "./pages/EmissionCompany";
 import DrawDown from "./pages/DrawDown";
 import Home from "./pages/Home";
 
@@ -37,6 +38,7 @@ function App() {
                   path="/emission/electricity"
                   element={<EmissionElectricity />}
                 />
+                <Route path="/emission/company" element={<EmissionCompany />} />
                 <Route path="/drawdown" element={<DrawDown />} />
               </Routes>
             </div>

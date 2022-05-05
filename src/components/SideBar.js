@@ -38,7 +38,7 @@ const SideBar = () => {
     {
       title: "Direct Emission",
       src: img_company,
-      link: "/emission/direct_emission",
+      link: "/emission/company",
       key: 4,
     },
   ];

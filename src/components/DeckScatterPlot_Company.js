@@ -10,7 +10,7 @@ import mapboxgl from "mapbox-gl";
 // eslint-disable-next-line import/no-webpack-loader-syntax
 // eslint-disable-next-line
 import MapboxWorker from "worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker";
-import powerplant_json from "../data/power_plant.json";
+import company_json from "../data/geocoded_company.json";
 
 mapboxgl.workerClass = MapboxWorker;
 const MAPBOX_ACCESS_TOKEN =
@@ -20,11 +20,10 @@ const getTooltip = ({ object }) => {
   return (
     object && {
       html: `\
-    <div><b>Power Plant Profile</b></div>
-    <div>${object.pp_type_en}</div>
-    <div>${object.pp_name_en}</div>
-    <div>${object.company_en}</div>
-    <div>${object.output}</div>
+    <div><b>Company Profile</b></div>
+    <div>${object.company_name}</div>
+    <div>${object.address}</div>
+    <div>${object.total_emission}</div>
     `,
     }
   );
@@ -69,7 +68,7 @@ function DeckScatterPlot() {
   });
   const layer = new ScatterplotLayer({
     id: "scatterplot-layer",
-    data: powerplant_json,
+    data: company_json,
     pickable: true,
     opacity: 0.8,
     stroked: true,
@@ -79,8 +78,8 @@ function DeckScatterPlot() {
     radiusMaxPixels: 100,
     lineWidthMinPixels: 1,
     getPosition: (d) => d.lng_lat,
-    getRadius: (d) => Math.sqrt(d.output * 700),
-    getFillColor: (d) => get_colour(d.pp_type_en),
+    getRadius: (d) => Math.sqrt(d.total_emission),
+    getFillColor: (d) => [255, 255, 0],
     getLineColor: (d) => [0, 0, 0],
   });
 

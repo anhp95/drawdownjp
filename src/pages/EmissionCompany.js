@@ -3,7 +3,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { RiArrowRightSFill } from "react-icons/ri";
 import { GoDash } from "react-icons/go";
 
-import DeckScatterPlot from "../components/DeckScatterPlot_PowerPlant";
+import DeckScatterPlot from "../components/DeckScatterPlot_Company";
 import Plot, { Plot2 } from "../components/Plot";
 import PlotGg, { SteppedArea } from "../components/PlotGg";
 
@@ -13,7 +13,7 @@ const Header = () => {
       <div className="flex flex-col md:flex-row">
         <div className="flex w-full md:w-1/3 p-5 h-10 items-center">
           <h1 className="text-sm md:text-xl font-medium">
-            Electricity Generation
+            Companies' Emission
           </h1>
         </div>
         <div className="flex w-full md:w-2/3 items-center justify-start md:justify-end p-5 h-10">
@@ -23,7 +23,7 @@ const Header = () => {
           <h1 className="float-left text-sm">Emission Tracker</h1>
           <RiArrowRightSFill className="float-left text-sm" />
           <h1 className="text-sm font-semibold underline float-left">
-            Electricity Generation
+            Companies' Emission
           </h1>
         </div>
       </div>
@@ -132,7 +132,7 @@ const PageContent = () => {
   );
 };
 
-const EmissionElectricity = () => {
+const EmissionCompany = () => {
   return (
     <div className="flex flex-col w-full">
       <Header />
@@ -141,4 +141,4 @@ const EmissionElectricity = () => {
   );
 };
 
-export default EmissionElectricity;
+export default EmissionCompany;
