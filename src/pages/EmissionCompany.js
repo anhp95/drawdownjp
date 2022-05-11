@@ -13,7 +13,7 @@ const Header = () => {
       <div className="flex flex-col md:flex-row">
         <div className="flex w-full md:w-1/3 p-5 h-10 items-center">
           <h1 className="text-sm md:text-xl font-medium">
-            Companies' Emission
+            Industrial Emission
           </h1>
         </div>
         <div className="flex w-full md:w-2/3 items-center justify-start md:justify-end p-5 h-10">
@@ -23,7 +23,7 @@ const Header = () => {
           <h1 className="float-left text-sm">Emission Tracker</h1>
           <RiArrowRightSFill className="float-left text-sm" />
           <h1 className="text-sm font-semibold underline float-left">
-            Companies' Emission
+            Industrial Emission
           </h1>
         </div>
       </div>
@@ -109,7 +109,7 @@ const PageContent = () => {
         <div className="flex flex-col w-full m-2 border-t-2">
           <div className="bg-white border-b-2">
             <h1 className="text-sm font-semibold float-left">
-              Power Power Plant Distribution
+              Industrial Emission
             </h1>
             <button
               className="float-right bg-white"

@@ -21,7 +21,7 @@
     "worker-loader": "^3.0.8"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node app",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },

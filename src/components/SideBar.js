@@ -18,7 +18,7 @@ const SideBar = () => {
 
   const emission_child = [
     {
-      title: "Overview",
+      title: "Total Emission Overview",
       src: img_overview,
       link: "/emission/overview",
       key: 1,
@@ -30,16 +30,16 @@ const SideBar = () => {
       key: 3,
     },
     {
+      title: "Industrial Emission",
+      src: img_company,
+      link: "/emission/company",
+      key: 4,
+    },
+    {
       title: "Forestry Sequestration",
       src: img_forestry,
       link: "/emission/forestry_sequestration",
       key: 2,
-    },
-    {
-      title: "Direct Emission",
-      src: img_company,
-      link: "/emission/company",
-      key: 4,
     },
   ];
 
@@ -68,7 +68,7 @@ const SideBar = () => {
               !sideBar && "scale-0"
             }`}
           >
-            DrawDown Japan
+            Drawdown Japan
           </h1>
         </div>
         <div className="w-full border-t border-gray-300"></div>
@@ -118,7 +118,7 @@ const SideBar = () => {
               <span
                 className={`origin-left duration-200 ${!sideBar && "hidden"}`}
               >
-                Carbon Neutrality
+                Drawdown Modelling
               </span>
             </li>
           </Link>

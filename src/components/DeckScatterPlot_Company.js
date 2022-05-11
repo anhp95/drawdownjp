@@ -21,9 +21,9 @@ const getTooltip = ({ object }) => {
     object && {
       html: `\
     <div><b>Company Profile</b></div>
-    <div>${object.company_name}</div>
-    <div>${object.address}</div>
-    <div>${object.total_emission}</div>
+    <div>Company name: ${object.company_name}</div>
+    <div>Address: ${object.address}</div>
+    <div>Total emission: ${object.total_emission} (tCO<sub>2</sub>)</div>
     `,
     }
   );

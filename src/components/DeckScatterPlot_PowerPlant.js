@@ -21,8 +21,11 @@ const getTooltip = ({ object }) => {
     object && {
       html: `\
     <div><b>Power Plant Profile</b></div
-    <div>${object.type}</div>
-    <div>${object.output}</div>
+    <div>Power Plant Name: ${object.name}</div>
+    <div>Power Facility: ${object.facility}</div>
+    <div>Address: ${object.location}</div>
+    <div>Power Plant Type: ${object.type}</div>
+    <div>Output Generation: ${object.output} (kW)</div>
     `,
     }
   );
@@ -77,7 +80,7 @@ function DeckScatterPlot() {
     radiusMaxPixels: 100,
     lineWidthMinPixels: 1,
     getPosition: (d) => d.lng_lat,
-    getRadius: (d) => Math.sqrt(d.output) * 3,
+    getRadius: (d) => Math.sqrt(d.output_viz) * 500,
     getFillColor: (d) => get_colour(d.type),
     getLineColor: (d) => [0, 0, 0],
   });
